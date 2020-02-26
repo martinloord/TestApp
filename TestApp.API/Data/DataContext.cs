@@ -10,5 +10,7 @@ namespace TestApp.API.Data
         public DbSet<Value> Values { get; set; }
 
         public DbSet<User> Users { get; set; }
+
+        public DbSet<Photo> Photos { get; set; }  //  från user- skapar en sambandstabell mellan user och photo (ICollection)
     }
 }
