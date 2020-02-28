@@ -11,7 +11,6 @@ export class AppComponent implements OnInit {
   jwtHelper = new JwtHelperService();
 
   constructor(private authService: AuthService) {}
-    
   ngOnInit() {
       const token = localStorage.getItem('token');
       if (token) {
